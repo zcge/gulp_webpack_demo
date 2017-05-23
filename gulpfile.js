@@ -27,12 +27,12 @@ gulp.task('browser-sync', function() {
 
 
 
-//打开浏览器
-gulp.task('open', () => {
-    console.log("open 浏览器");
-    gulp.src('./dist/index.html')
-        .pipe(open());
-});
+// //打开浏览器
+// gulp.task('open', () => {
+//     console.log("open 浏览器");
+//     gulp.src('./dist/index.html')
+//         .pipe(open());
+// });
 
 
 //开启监听 调试代码的时候去重新打包
@@ -45,6 +45,6 @@ gulp.task("watch-change-src", () => {
 
 
 //默认要用的
-gulp.task("default", ["webpack", "browser-sync", "open", "watch-change-src"], () => {
+gulp.task("default", ["webpack", "browser-sync", "watch-change-src"], () => {
     console.log("工程执行启动完毕")
 });

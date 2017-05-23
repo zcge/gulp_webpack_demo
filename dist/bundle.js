@@ -42,24 +42,25 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__(1);
 
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
-	let a = 1;
-	let b = {
-	    a: () => {
-	        console.log(2);
+	class A {
+	    constructor() {
+	    }
+	    sayhello(){
+	        console.log("hello World");
 	    }
 	}
-	console.log(a);
-	b.a();
+	let a = new A();
+	a.sayhello();
 
-/***/ }
+/***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map

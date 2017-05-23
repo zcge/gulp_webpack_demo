@@ -1,8 +1,9 @@
-let a = 1;
-let b = {
-    a: () => {
-        console.log(2);
+class A {
+    constructor() {
+    }
+    sayhello(){
+        console.log("hello World");
     }
 }
-console.log(a);
-b.a();
+let a = new A();
+a.sayhello();
